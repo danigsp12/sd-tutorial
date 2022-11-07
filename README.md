@@ -65,4 +65,4 @@ docker-compose exec jobmanager ./bin/flink run -py /opt/pyflink-walkthrough/paym
 
 Revisamos nuevamente el Flink Web UI y debería aparecernos el job corriendo.
 Luego en Kibana nos vamos al Dashboard y revisamos los gráficos.
-FIN
+### FIN

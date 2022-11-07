@@ -21,7 +21,7 @@ from pyflink.table import StreamTableEnvironment, DataTypes, EnvironmentSettings
 from pyflink.table.udf import udf
 
 
-provinces = ("Beijing", "Shanghai", "Hangzhou", "Shenzhen", "Jiangxi", "Chongqing", "Xizang")
+provinces = ("Santiago", "Vicuña", "Valdivia", "Concepción", "La Serena", "Viña del Mar", "Antofagasta")
 
 
 @udf(input_types=[DataTypes.STRING()], result_type=DataTypes.STRING())

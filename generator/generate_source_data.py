@@ -28,14 +28,15 @@ from time import sleep
 def write_data(producer):
     data_cnt = 20000
     order_id = calendar.timegm(time.gmtime())
-    max_price = 100000
+    max_price = 10000
     topic = "payment_msg"
 
     for i in range(data_cnt):
         ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         rd = random.random()
         order_id += 1
-        pay_amount = max_price * rd
+        pay_amount = randint(500,10000)
+        #pay_amount = max_price * rd
         pay_platform = 0 if random.random() < 0.9 else 1
         province_id = randint(0, 6)
         cur_data = {"createTime": ts, "orderId": order_id, "payAmount": pay_amount, "payPlatform": pay_platform, "provinceId": province_id}
